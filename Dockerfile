@@ -14,7 +14,7 @@ RUN apt-get update -y && \
 # -- FIN COUCHE APACHE --------------------------------------------------------
 
 # -- DEBUT COUCHE MYSQL -------------------------------------------------------
-RUN apt-get install ${APT-FLAGS} mariadb-server
+RUN apt-get install ${APT_FLAGS} mariadb-server
 
 COPY db/articles.sql /
 # -- FIN COUCHE MYSQL ---------------------------------------------------------
